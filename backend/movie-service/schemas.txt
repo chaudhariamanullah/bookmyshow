@@ -1,0 +1,18 @@
+Databse Type - SQL
+SQL Name- MySql
+Databse Name- movies_service
+Tables- Movies, Cast
+
+
+Movies
+id char(6 letter combination of letters and numbers ) PK
+title varchar(40 length)
+poster_url varchar(80 length)
+realese_date datetime
+created_at datetime
+updated_at datetime
+
+
+Cast
+id char (4 letter combination of letters and numbers) PK
+actor_name varchar(30 length)

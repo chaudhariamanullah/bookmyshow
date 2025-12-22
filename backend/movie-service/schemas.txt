@@ -13,7 +13,7 @@ created_at datetime
 updated_at datetime
 
 
-Cast
+Actors
 id char (4 letter combination of letters and numbers) PK
 actor_name varchar(30 length)
 actor_dob date
@@ -34,4 +34,6 @@ name varchar(20)
 movie_language
 movie_id  (FK → movies.id)
 language_id (FK → languages.id)
+
+
 User → Zod → Controller → Service → Model → DB

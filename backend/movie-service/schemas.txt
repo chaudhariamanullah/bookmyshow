@@ -16,3 +16,22 @@ updated_at datetime
 Cast
 id char (4 letter combination of letters and numbers) PK
 actor_name varchar(30 length)
+actor_dob date
+actor_birthplace varchar(20)
+actor_spouse varchar(20)
+
+movie_cast
+id (PK)
+movie_id (FK → movies.id)
+cast_id  (FK → cast.id)
+role_name (optional)
+
+
+languages
+language_id varchar(4)
+name varchar(20)
+
+movie_language
+movie_id  (FK → movies.id)
+language_id (FK → languages.id)
+User → Zod → Controller → Service → Model → DB

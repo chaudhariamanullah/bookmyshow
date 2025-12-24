@@ -1,13 +1,12 @@
 Databse Type - SQL
 SQL Name- MySql
 Databse Name- movies_service
-Tables- Movies, Cast
 
 
 Movies
 id char(6 letter combination of letters and numbers ) PK
 title varchar(40 length)
-poster_url varchar(80 length)
+poster_url varchar(200 length)
 realese_date datetime
 created_at datetime
 updated_at datetime
@@ -23,7 +22,7 @@ actor_spouse varchar(20)
 movie_cast
 id (PK)
 movie_id (FK → movies.id)
-cast_id  (FK → cast.id)
+cast_id  (FK → actors.id)
 role_name (optional)
 
 

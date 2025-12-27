@@ -1,8 +1,8 @@
-export interface movies{
-    movie_id:string,
+export interface Movie{
+    movie_public_id:string,
     title:string,
     poster_url:string,
-    realese_date:Date,
+    released_at:Date,
     created_at:Date,
     updated_at:Date
 }

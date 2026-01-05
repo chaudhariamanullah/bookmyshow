@@ -1,4 +1,4 @@
-export interface movie_language{
-    movie_id:string,
-    language_id:number
+export interface AddLanguagesList{
+    language_ids:number[]
+    languages:String[]
 }

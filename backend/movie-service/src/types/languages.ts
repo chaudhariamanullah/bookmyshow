@@ -1,4 +1,4 @@
-export interface languages{
+export interface Languages{
     language_id:number,
-    name:string
+    language_name:string
 }

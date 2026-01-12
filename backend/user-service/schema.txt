@@ -1,0 +1,15 @@
+database user_service
+
+--- users ---
+user_id
+user_public_id
+first_name
+last_name
+email
+phone
+password
+auth_app
+role
+status
+created_at
+updated_at

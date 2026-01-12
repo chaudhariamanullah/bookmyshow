@@ -1,0 +1,3 @@
+easy- search, user, admin
+mid- showTime, seat
+diff- booking, payment, noti, auth

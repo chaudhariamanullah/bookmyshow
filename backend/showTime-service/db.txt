@@ -1,0 +1,11 @@
+CREATE TABLE showtime(
+    showtime_id INT PRIMARY KEY AUTO_INCREMENT,
+    showtime_public_id CHAR(36) NOT NULL UNIQUE,
+    movie_id NOT NULL,
+    theater_id NOT NULL,
+    screen_id NOT NULL,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    showtime_status ENUM('housefull','cancel','running');
+    FOREIGN KEY(movie_id) REFERENCES(movie_id)
+)

@@ -1,9 +1,11 @@
 import bookingModel from "../models/model.booking.js";
 import type { AddBookingInput } from "../schemas/schema.addBooking.js";
+import { nanoid } from "nanoid";
 
 const bookingService = {
     async booking(booking:AddBookingInput){
-        return await bookingModel.booking(booking);
+        const booking_public_id = nanoid(10);
+        return await bookingModel.booking({booking_public_id,...booking});
     },
 
     async confirmBooking(booking_public_id:string){

@@ -17,6 +17,6 @@ route.patch("/:user_public_id/reset-password",UserController.resetPassword);
 route.patch("/:user_public_id/setRole",UserController.setRole);
 
 route.get("/:user_public_id/email-exists", UserController.emailExists);
-route.get("/:user_public_id/phone-exists", UserController.phoneExists)
+route.get("/:user_public_id/phone-exists", UserController.phoneExists);
 
 export default route;
